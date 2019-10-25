@@ -1,5 +1,4 @@
 import React, { useReducer } from 'react'
-import uuid from 'uuid'
 import axios from 'axios'
 import ContactContext from './contactContext'
 import contactReducer from './contactReducer'
@@ -141,8 +140,7 @@ const ContactState = props => {
         clearFilter,
         filterContacts,
         getContacts,
-        clearContacts,
-        updateContact
+        clearContacts
       }}
     >
       {props.children}
